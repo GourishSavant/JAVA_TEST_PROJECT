@@ -1,0 +1,125 @@
+[
+  {
+    "ShpInfReqDef": {
+      "Id": "5d409c05-ccec-4bc3-a6d9-82b09742a366",
+      "Nm": "Diplomatic exemption - HR",
+      "Dsc": "Diplomatic exemption  desc",
+      "DrvdFromShpInfReqDef": {},
+      "LedOwnOrgn": {
+        "CtryCd": "HR"
+      },
+      "ApplyAllInd": false,
+      "PrsnDatSenstyClssLvl": "low",
+      "QuickGuideEnabledInd": false,
+      "UICmpt": {
+        "CmptNm": "IOUDoc",
+        "DisplayTtl": "IOU Document(Diplomatic Clearance)",
+        "Tooltip": "",
+        "CmptTy": "Composed",
+        "DisplayDsc": {
+          "DisplayTxt": ""
+        },
+        "Hint":""
+      },
+      "Ent": [
+        {
+          "Id": "9c0da078-cab4-4437-be6f-1098d2133bf1",
+          "Nm": "Diplomatic exemption Entity",
+          "Dsc": "Diplomatic exemption desc",
+          "isImg": false,
+          "isExcl": false,
+          "isMan": true,
+          "Ent": [
+            {
+              "Id": "6c4c7a0c-e3a2-423e-bafe-a840f5c2ebd0",
+              "Nm": "Shipment Document",
+              "Dsc": "Document Image",
+              "isImg": false,
+              "isExcl": false,
+              "isMan": true,
+              "Ent": [
+                {
+                  "Id": "5a370032-c568-4d73-b598-52b0378f9946",
+                  "Nm": "Image",
+                  "Dsc": "Document Image",
+                  "isImg": true,
+                  "isExcl": false,
+                  "isMan": true,
+                  "Att": [
+                    {
+                      "Id": "0b457148-2b9c-48b3-a19d-4b0b0854e8fa",
+                      "Nm": "Document Family Code",
+                      "Dsc": "GIA Document Family Code",
+                      "AttTy": "Constant",
+                      "DflVal": "ENT",
+                      "isExcl": false,
+                      "isMan": true,
+                      "AttMsgPos": [
+                        {
+                          "Ver": "3.002",
+                          "MsgTyCd": "DocImgMsg",
+                          "xPath": "DocImgMsg/Bd/Doc/DocFamCd"
+                        }
+                      ]
+                    },
+                    {
+                      "Id": "051c52d5-6f32-480f-8f5a-2507cf79d513",
+                      "Nm": "Document Type Code",
+                      "Dsc": "GIA Document Type Code",
+                      "AttTy": "Constant",
+                      "DflVal": "ENT",
+                      "isExcl": false,
+                      "isMan": true,
+                      "AttMsgPos": [
+                        {
+                          "Ver": "3.002",
+                          "MsgTyCd": "DocImgMsg",
+                          "xPath": "DocImgMsg/Bd/Doc/DocTyCd"
+                        }
+                      ]
+                    },
+                    {
+                      "Id": "c61c20a4-a577-4614-ab68-bc92f2180118",
+                      "Nm": "Diplomatic Clearance Image From Customer",
+                      "Dsc": "Document Image",
+                      "AttTy": "UserEntry",
+                      "isExcl": false,
+                      "isMan": true,
+                      "MaxFlSz": 6000,
+                      "MaxFlCnt": 20,
+                      "AlwExt": [
+                        "pdf",
+                        "jpeg",
+                        "jpg",
+                        "png",
+                        "bmp",
+                        "docx"
+                      ],
+                      "UICmpt": {
+                        "CmptNm": "FOAimg",
+                        "DisplayTtl": "IOU Document",
+                        "Hint": "Upload File(s)",
+                        "Tooltip": "",
+                        "CmptTy": "FileUploader",
+                        "DisplayDsc": {
+                          "DisplayTxt": "Requried Tax documentation"
+                        }
+                      },
+                      "AttMsgPos": [
+                        {
+                          "Ver": "12.030",
+                          "MsgTyCd": "ShpPcdDetailsMsg",
+                          "xPath": "ShpPcdDetailsMsg/Bd/Shp/ShpDoc/Img/Loc"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+]
